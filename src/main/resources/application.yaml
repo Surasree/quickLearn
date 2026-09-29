@@ -1,0 +1,3 @@
+api:
+  endpoint: "https://gateway.timeapi.world/timezone/"
+  continent: "Europe"
