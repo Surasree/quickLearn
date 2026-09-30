@@ -14,8 +14,48 @@ public class UserEntity implements Serializable {
         this.creationTime = creationTime;
     }
 
+
+    private Long id;
+    @Id
+    private String firstName;
+    private String lastName;
+    private Integer membershipId;
+    private String creationTime;
+
     public UserEntity() {
 
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Integer getMembershipId() {
+        return membershipId;
+    }
+
+    public void setMembershipId(Integer membershipId) {
+        this.membershipId = membershipId;
+    }
+
+    public String getCreationTime() {
+        return creationTime;
+    }
+
+    public void setCreationTime(String creationTime) {
+        this.creationTime = creationTime;
     }
 
     public Long getId() {
@@ -26,10 +66,4 @@ public class UserEntity implements Serializable {
         this.id = id;
     }
 
-    @Id
-    private Long id;
-    private String firstName;
-    private String lastName;
-    private Integer membershipId;
-    private String creationTime;
 }

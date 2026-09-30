@@ -39,10 +39,11 @@ public class UserModel {
         return membershipId;
     }
 
-    public UserModel(String firstName, String lastName, Integer membershipId) {
+    public UserModel(String firstName, String lastName, Integer membershipId, String creationTime) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.membershipId = membershipId;
+        this.creationTime = creationTime;
     }
 
     public UserModel() {

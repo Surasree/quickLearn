@@ -4,5 +4,9 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserRepository extends CrudRepository<UserEntity,Integer> {
+public interface UserRepository extends CrudRepository<UserEntity,Integer>{
+
+        UserEntity findByFirstName(String firstName);
+       // void save(UserEntity userEntity);
+        void deleteByFirstName(String firstName);
 }

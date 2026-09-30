@@ -23,19 +23,6 @@ public class UserController {
     @GetMapping("/getUser/{userName}")
     public ResponseEntity<UserModel> getUser(@PathVariable("userName") String userName)
     {
-        //return "User: John Doe";
-        //return "<html><body><h1>The browser renders the HTML<h1><body><html>";
-        /*if (userMap.containsKey(userName))
-        {
-            return ResponseEntity.of(Optional.of(userMap.get(userName)));
-        }
-        else
-        {
-            return ResponseEntity.notFound().build();
-        }*/
-        //userMap.get(userName);
-        //return new UserModel("John", "Doe",1234);
-        //return userMap.get(userName);
 
         return ResponseEntity.of(Optional.ofNullable(service.getUser(userName)));
     }
